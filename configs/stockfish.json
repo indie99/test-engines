@@ -1,4 +1,4 @@
-{	"id": "stockfish"
+{	"id": "stockfish",
 	"name": "Stockfish",
 	"engine": "stockfish-ubuntu-x86-64-avx2",
 	"author": "T. Romstad, M. Costalba, J. Kiiski, G. Linscott",
