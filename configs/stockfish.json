@@ -1,4 +1,4 @@
-{
+{       "id": "stockfish"
 	"name": "Stockfish",
 	"engine": "stockfish-ubuntu-x86-64-avx2",
 	"author": "T. Romstad, M. Costalba, J. Kiiski, G. Linscott",
@@ -13,9 +13,7 @@
 	"license": "GPL-3.0",
 	"homepage": "https://stockfishchess.org/",
 	"source_repo": "https://github.com/official-stockfish/Stockfish",
-	"artwork": {
-		"icon": "https://raw.githubusercontent.com/indie99/engines/2abfcd9db26ee968c2b72caba165604483176aaf/stockfish.jpg",
-		"banner": "https://raw.githubusercontent.com/indie99/engines/2abfcd9db26ee968c2b72caba165604483176aaf/stockfish.jpg"
-	},
+	"icon": "https://raw.githubusercontent.com/indie99/engines/2abfcd9db26ee968c2b72caba165604483176aaf/stockfish.jpg",
+	"banner": "https://raw.githubusercontent.com/indie99/engines/2abfcd9db26ee968c2b72caba165604483176aaf/stockfish.jpg"
 	"recommended_for": ["Advanced", "Engine Tournaments"]
 }
