@@ -96,14 +96,15 @@ jobs:
           sed -i 's/"engine": *"[^"]*"/"engine": "stockfish-windows-x86-64-avx512.exe"/' engines/stockfish/config.json
 
       # ----------------------------------------------------------
-      # 5️⃣ Package each engine individually
+      # 5️⃣ Package each engine individually (flat structure)
       # ----------------------------------------------------------
-      - name: Create ZIPs
+      - name: Create ZIPs (flat)
         run: |
           cd engines
-          zip -r caissa-windows-avx512.zip caissa
-          zip -r patricia-windows-avx512.zip patricia
-          zip -r stockfish-windows-avx512.zip stockfish
+          echo "📦 Creating flat zips..."
+          (cd caissa && zip -r ../caissa-windows-avx512.zip .)
+          (cd patricia && zip -r ../patricia-windows-avx512.zip .)
+          (cd stockfish && zip -r ../stockfish-windows-avx512.zip .)
           ls -lh *.zip
 
       # ----------------------------------------------------------
